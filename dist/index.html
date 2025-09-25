@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Steve Fuentes</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/global.css">
+<script>
+  document.fonts.ready.then(() => {
+    document.body.classList.add('text-visible');
+  });
+</script>  <style>
+    body {      
+      transition: background-image 0.3s ease;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    p{
+      margin-top: -30vh;      
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    const links = document.querySelectorAll('a[data-bg]');
+    links.forEach((link)=>{
+      link.addEventListener('mouseover', function(){
+        document.body.style.backgroundImage = `url(${link.dataset.bg})`;  
+      })
+      link.addEventListener('mouseout', () => {
+        document.body.style.backgroundImage = '';
+      });
+      
+    })
+  });
+  </script>
+</head>
+<body>
+  <p>
+    <a href="https://www.linkedin.com/in/steve-fuentes-16182b98/">Steve Fuentes</a>  is a <a href="https://flashforward.tech" data-bg="./fft.jpg">software developer</a>, <a href="/art">artist</a> and computer nerd.
+  </p>    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/global.css">
+<script>
+  document.fonts.ready.then(() => {
+    document.body.classList.add('text-visible');
+  });
+</script>  <title>Steve Fuentes | Art</title>
+  <script>    
+    document.addEventListener("DOMContentLoaded", function(){
+      const images = document.getElementById('images');
+      document.addEventListener('wheel', (e) => {        
+        images.scrollLeft += e.deltaY;
+      }, { passive: false }); 
+    });
+  </script>
+  <style>
+     #images{       
+        width: 100%;       
+        margin-top:10px;           
+        img{
+          margin: 0 auto;                
+          height: auto;
+          width:100%;
+          display: block;
+        }
+      }
+    @media (min-width: 1024px){
+      #images{
+        display:flex;
+        height: 95%;
+        width: 100%;
+        overflow:scroll;
+        margin-top:10px;    
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        img{
+          margin: 0 auto;                
+          height: 100%;
+          width:auto;
+          display: block;
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <a href="/">Steve Fuentes</a>  is an artist. He's also a <a href="https://flashforward.tech" data-bg="./fft.jpg">software developer</a> and computer nerd.
+  </p>     
+  <div id="images">    
+          <img src="../images/Capt-Marvel-01.jpg" alt="">
+          <img src="../images/Capt-Marvel-02.jpg" alt="">
+          <img src="../images/Capt-Marvel-03.jpg" alt="">
+          <img src="../images/Capt-Marvel-04.jpg" alt="">
+          <img src="../images/Capt-Marvel-05.jpg" alt="">
+          <img src="../images/Capt-Marvel-06.jpg" alt="">
+          <img src="../images/Clutch-01.jpg" alt="">
+          <img src="../images/Clutch-02.jpg" alt="">
+          <img src="../images/Fuentes.Steven.Dragon.Page01.jpg" alt="">
+          <img src="../images/Fuentes.Steven.Dragon.Page02.jpg" alt="">
+          <img src="../images/Fuentes.Steven.Dragon.Page03.jpg" alt="">
+          <img src="../images/Fuentes.Steven.Dragon.Page04.jpg" alt="">
+          <img src="../images/Fuentes.Steven.Dragon.Page05.jpg" alt="">
+          <img src="../images/Fuentes.Steven.Dragon.Page06.jpg" alt="">
+          <img src="../images/Mars-01.jpg" alt="">
+          <img src="../images/Mars-02.jpg" alt="">
+          <img src="../images/Mars-03.jpg" alt="">
+          <img src="../images/raptor.jpg" alt="">
+      </div>
+</body>
+</html>

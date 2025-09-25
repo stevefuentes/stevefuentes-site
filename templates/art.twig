@@ -1,8 +1,7 @@
-<?php $images = glob("./images/*.{jpg,jpeg,png,gif,webp}", GLOB_BRACE); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php include_once('./head.php'); ?>
+  {% include './includes/head.twig' %}
   <title>Steve Fuentes | Art</title>
   <script>    
     document.addEventListener("DOMContentLoaded", function(){
@@ -47,9 +46,9 @@
     <a href="/">Steve Fuentes</a>  is an artist. He's also a <a href="https://flashforward.tech" data-bg="./fft.jpg">software developer</a> and computer nerd.
   </p>     
   <div id="images">    
-    <?php foreach ($images as $img): ?>
-      <img src="<?= htmlspecialchars($img) ?>" alt="">
-    <?php endforeach; ?>  
+    {% for img in images %}
+      <img src="../images/{{ img|e }}" alt="">
+    {% endfor %}
   </div>
 </body>
 </html>

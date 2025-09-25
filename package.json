@@ -1,0 +1,17 @@
+{
+  "name": "stevefuentes-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.1",
+  "dependencies": {
+    "twig": "^1.17.1"
+  }
+}
